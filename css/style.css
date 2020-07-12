@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url('fonts/OpenSans-Regular.woff2') format('woff2'),
+    url('fonts/OpenSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url('fonts/OpenSans-Bold.woff2') format('woff2'),
+    url('fonts/OpenSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #000;
+}
+
+.header {
+  padding-top: 2.6%;
+  padding-bottom: 7.2%;
+  background-image: url('../img/football_1920.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  min-width: 1200px;
+}
+
+.header::before {
+  content: "";
+  background-color: #0a0e34;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.container {
+  width: 100%;
+  width: 1530px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.header-logo {
+  width: 13.7%;
+}
+
+.header-title {
+  width: 100%;
+  margin-top: 11.8%;
+  margin-bottom: 8.5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.title {
+  font-size: 90px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title-stroke {
+  display: block;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  width: 100%;
+  min-width: 311px;
+  height: 77px;
+  border-radius: 38px;
+  background-color: #5e42b0;
+  border: none;
+  margin-right: 50px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.button_download,
+.button_send {
+  height: 100%;
+  max-width: 40px;
+  fill: #ffffff;
+  flex-grow: 0;
+}
+
+.button-text {
+  font-size: 14px;
+}
+
+.button-text_weight {
+  font-weight: 700;
+}
+
+.athlete {
+  background: linear-gradient(#fff 50%, #c1c1c1 35%, #5e42b0 15%);
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+.card-img_athlete {
+  width: 40%;
+  margin-bottom: -50px;
+  margin-right: 50px;
+}
+
+.card-description {
+  width: 46%;
+}
+
+.card-title {
+  font-size: 80px;
+  text-transform: uppercase;
+  color: #e7e7e7;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #c1c1c1;
+  font-weight: 700;
+  vertical-align: super;
+}
+
+.card-header {
+  display: flex;
+  flex-grow: 0;
+}
+
+.card-num {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card-num::before {
+  width: 19px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #5e42b0;
+  display: block;
+}
+
+.card-content {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 3.9%;
+}
+
+.player {
+  background: linear-gradient(#fff 57.1%, #c1c1c1 23%, #0a0e34 19.6%);
+  display: flex;
+  justify-content: center;
+  padding-top: 1.6%;
+  padding-bottom: 3.9%;
+}
+
+.card-description_player {
+  width: 35%;
+}
+
+.card-img_player {
+  width: 65%;
+}
+
+.card-img {
+  width: 50%;
+}
+
+.footer {
+  padding-top: 2.6%;
+  padding-bottom: 7.2%;
+  background-image: url('../img/game_1920.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  min-width: 1200px;
+}
+
+.footer::after {
+  content: "";
+  background-color: #0a0e34;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.footer-title {
+  width: 55%;
+  flex-grow: 0;
+}
+
+.footer-svg {
+  min-width: 80px;
+  height: 80px;
+  fill: #fff;
+  background-color: #5e42b0;
+  border-radius: 25%;
+}
+
+.footer-text {
+  font-size: 30px;
+  color: #a496ca;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.footer-logo {
+  width: 13.7%;
+  fill: #fff;
+}
