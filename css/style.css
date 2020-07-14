@@ -49,7 +49,6 @@ body {
 
 .container {
   width: 100%;
-  width: 1530px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -58,6 +57,7 @@ body {
 
 .header-logo {
   width: 13.7%;
+  fill: #fff;
 }
 
 .header-title {
@@ -65,14 +65,13 @@ body {
   margin-top: 11.8%;
   margin-bottom: 8.5%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .title {
   font-size: 90px;
   color: #ffffff;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -80,54 +79,82 @@ body {
   display: block;
 }
 
+.title-stroke_title {
+  justify-content: right;
+}
+
 .buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .button {
-  width: 100%;
-  min-width: 311px;
-  height: 77px;
   border-radius: 38px;
   background-color: #5e42b0;
   border: none;
   margin-right: 50px;
   color: #ffffff;
   text-transform: uppercase;
+  padding: 10px 25px 15px 20px;
+  text-align: center;
 }
 
 .button_download,
 .button_send {
-  height: 100%;
   max-width: 40px;
+  height: 100%;
   fill: #ffffff;
+  vertical-align: middle;
+  margin-right: 15px;
   flex-grow: 0;
 }
 
 .button-text {
   font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 0;
 }
 
 .button-text_weight {
   font-weight: 700;
 }
 
-.athlete {
-  background: linear-gradient(#fff 50%, #c1c1c1 35%, #5e42b0 15%);
-  display: flex;
-  justify-content: center;
-  padding-top: 25px;
-}
-
 .card-img_athlete {
-  width: 40%;
-  margin-bottom: -50px;
-  margin-right: 50px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  margin-bottom: -25px;
 }
 
-.card-description {
-  width: 46%;
+.card {
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 0;
+  background-color: #fff;
+}
+
+.card_white {
+  background-color: #fff;
+  width: 1925px;
+  height: 196px;
+}
+
+.card_grey {
+  background-color: #efefef;
+  width: 1925px;
+  height: 196px;
+}
+
+.card_blue {
+  background-color: #5e42b0;
+  width: 1925px;
+  height: 196px;
+}
+
+.block-left {
+  padding-left: 55%;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .card-title {
@@ -135,6 +162,7 @@ body {
   text-transform: uppercase;
   color: #e7e7e7;
   font-weight: 700;
+  padding: 0;
 }
 
 .subtitle {
@@ -155,54 +183,118 @@ body {
   color: #000000;
   font-weight: 700;
   text-align: center;
+  margin-right: 10px;
 }
 
-.card-num::before {
+.card-num::after {
   width: 19px;
   height: 5px;
-  border-radius: 2px;
-  background-color: #5e42b0;
+  color: #5e42b0;
   display: block;
 }
 
 .card-content {
   font-size: 20px;
   font-weight: 400;
-  margin-bottom: 3.9%;
+  padding-bottom: 0;
 }
 
 .player {
-  background: linear-gradient(#fff 57.1%, #c1c1c1 23%, #0a0e34 19.6%);
   display: flex;
   justify-content: center;
   padding-top: 1.6%;
-  padding-bottom: 3.9%;
 }
 
-.card-description_player {
-  width: 35%;
+.card_white {
+  width: 1925px;
+  height: 196px;
+}
+
+.card_silver {
+  width: 1925px;
+  height: 196px;
+  background-color: #f0f1f1;
+}
+
+.card_dark {
+  width: 1925px;
+  height: 196px;
+  background-color: #0a0e34;
+}
+
+.cards {
+  width: 40%;
+}
+
+.block-right {
+  padding-right: 55%;
+}
+
+.block-right:nth-child(n+2) {
+  padding-bottom: 60px;
 }
 
 .card-img_player {
-  width: 65%;
+  width: 60%;
 }
 
 .card-img {
   width: 50%;
+  display: block;
+}
+
+.card-description {
+  width: 50%;
+}
+
+.card-title_card {
+  margin-top: 220px;
+  font-size: 80px;
+  line-height: 60px;
+  color: #e7e7e7;
+  font-weight: 700;
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+
+.card-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding-left: 120px;
+}
+
+.card-text {
+  width: 65%;
+}
+
+.card-block {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  width: 168px;
+  height: 155px;
+  background-color: #5e42b0;
+  font-size: 24px;
+  color: #f5f6f7;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
-  padding-top: 2.6%;
+  padding-top: 15%;
   padding-bottom: 7.2%;
   background-image: url('../img/game_1920.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
   position: relative;
-  min-width: 1200px;
+  margin: 0 auto;
 }
 
-.footer::after {
+.footer::before {
   content: "";
   background-color: #0a0e34;
   opacity: 0.7;
@@ -213,9 +305,25 @@ body {
   bottom: 0;
 }
 
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer-title {
-  width: 55%;
-  flex-grow: 0;
+  width: 60%;
+  margin-bottom: 9.8%;
+  padding-top: 0;
+}
+
+.footer-title_title {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  vertical-align: top;
+  font-size: 80px;
 }
 
 .footer-svg {
@@ -224,6 +332,8 @@ body {
   fill: #fff;
   background-color: #5e42b0;
   border-radius: 25%;
+  padding: 20px 10px;
+  margin-right: 25px;
 }
 
 .footer-text {
@@ -231,9 +341,11 @@ body {
   color: #a496ca;
   font-weight: 400;
   text-transform: uppercase;
+  font-size: 30px;
 }
 
 .footer-logo {
   width: 13.7%;
   fill: #fff;
+  margin-top: 225px;
 }
