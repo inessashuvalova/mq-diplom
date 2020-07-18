@@ -39,7 +39,7 @@ body {
 .header::before {
   content: "";
   background-color: #0a0e34;
-  opacity: 0.7;
+  opacity: 0.9;
   position: absolute;
   top: 0;
   right: 0;
@@ -61,7 +61,7 @@ body {
 }
 
 .header-title {
-  width: 100%;
+  width: 90%;
   margin-top: 11.8%;
   margin-bottom: 8.5%;
   display: flex;
@@ -76,16 +76,16 @@ body {
 }
 
 .title-stroke {
-  display: block;
+  padding-right: 25%;
 }
 
 .title-stroke_title {
-  justify-content: right;
+  padding-left: 20%;
 }
 
 .buttons {
   display: flex;
-  justify-content: center;
+  justify-content: space-between
 }
 
 .button {
@@ -95,35 +95,50 @@ body {
   margin-right: 50px;
   color: #ffffff;
   text-transform: uppercase;
-  padding: 10px 25px 15px 20px;
+  padding: 10px 55px 12px 30px;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  min-width: 200px;
+  align-self: center;
 }
 
 .button_download,
 .button_send {
-  max-width: 40px;
+  max-width: 48px;
   height: 100%;
   fill: #ffffff;
-  vertical-align: middle;
   margin-right: 15px;
-  flex-grow: 0;
+  vertical-align: middle;
+}
+
+.button_send {
+  max-width: 40px;
 }
 
 .button-text {
   font-size: 14px;
   font-weight: 400;
   padding-bottom: 0;
+  line-height: 0.933;
 }
 
 .button-text_weight {
   font-weight: 700;
+  display: block;
+}
+
+.athlete,
+.player,
+.section-card {
+  position: relative;
 }
 
 .card-img_athlete {
   position: absolute;
   top: 5%;
   left: 5%;
-  margin-bottom: -25px;
+  padding-left: 6%;
 }
 
 .card {
@@ -131,30 +146,25 @@ body {
   font-weight: 400;
   padding-bottom: 0;
   background-color: #fff;
+  margin: 0;
 }
 
 .card_white {
   background-color: #fff;
-  width: 1925px;
-  height: 196px;
 }
 
 .card_grey {
   background-color: #efefef;
-  width: 1925px;
-  height: 196px;
 }
 
 .card_blue {
   background-color: #5e42b0;
-  width: 1925px;
-  height: 196px;
 }
 
 .block-left {
-  padding-left: 55%;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-left: 54%;
+  padding-bottom: 2.92%;
+  padding-top: 2%;
 }
 
 .card-title {
@@ -162,6 +172,7 @@ body {
   text-transform: uppercase;
   color: #e7e7e7;
   font-weight: 700;
+  margin: 0;
   padding: 0;
 }
 
@@ -170,27 +181,28 @@ body {
   text-transform: uppercase;
   color: #c1c1c1;
   font-weight: 700;
-  vertical-align: super;
-}
-
-.card-header {
-  display: flex;
-  flex-grow: 0;
 }
 
 .card-num {
   font-size: 18px;
   color: #000000;
   font-weight: 700;
-  text-align: center;
   margin-right: 10px;
+  vertical-align: super;
 }
 
-.card-num::after {
+.card-num::before {
   width: 19px;
   height: 5px;
   color: #5e42b0;
   display: block;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.paragraf {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .card-content {
@@ -200,51 +212,42 @@ body {
 }
 
 .player {
-  display: flex;
-  justify-content: center;
-  padding-top: 1.6%;
-}
-
-.card_white {
-  width: 1925px;
-  height: 196px;
+  padding-top: 2.6%;
 }
 
 .card_silver {
-  width: 1925px;
-  height: 196px;
   background-color: #f0f1f1;
 }
 
 .card_dark {
-  width: 1925px;
-  height: 196px;
   background-color: #0a0e34;
 }
 
-.cards {
-  width: 40%;
-}
-
 .block-right {
-  padding-right: 55%;
-}
-
-.block-right:nth-child(n+2) {
-  padding-bottom: 60px;
+  padding-right: 45%;
+  padding-bottom: 2%;
+  padding-top: 2%;
 }
 
 .card-img_player {
-  width: 60%;
+  width: 55%;
+  position: absolute;
+  top: 10%;
+  left: 42%;
 }
 
 .card-img {
   width: 50%;
-  display: block;
+  position: absolute;
 }
 
-.card-description {
+.card-img_right {
   width: 50%;
+  position: absolute;
+  top: 19%;
+  right: 0;
+  left: 50%;
+  bottom: 0;
 }
 
 .card-title_card {
@@ -258,20 +261,27 @@ body {
 }
 
 .card-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  padding-left: 120px;
+  padding-left: 60%;
+  padding-top: 0.2%;
+}
+
+.card-content_left {
+  padding-right: 50%;
+  padding-top: 7.2%;
+  padding-bottom: 11%;
 }
 
 .card-text {
-  width: 65%;
+  width: 80%;
+  font-size: 24px;
+  color: #000000;
+  font-weight: 400;
 }
 
 .card-block {
   position: absolute;
-  top: 30%;
-  left: 45%;
+  top: 35%;
+  left: 44%;
   width: 168px;
   height: 155px;
   background-color: #5e42b0;
@@ -297,7 +307,7 @@ body {
 .footer::before {
   content: "";
   background-color: #0a0e34;
-  opacity: 0.7;
+  opacity: 0.9;
   position: absolute;
   top: 0;
   right: 0;
@@ -333,7 +343,7 @@ body {
   background-color: #5e42b0;
   border-radius: 25%;
   padding: 20px 10px;
-  margin-right: 25px;
+  margin-right: 15px;
 }
 
 .footer-text {
@@ -342,6 +352,8 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   font-size: 30px;
+  display: block;
+  text-align: center;
 }
 
 .footer-logo {
