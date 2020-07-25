@@ -135,10 +135,10 @@ body {
 .card-img_athlete {
   position: absolute;
   top: 3%;
-  left: 5%;
+  left: 3%;
   right: 50%;
   padding-left: 6%;
-  width: 40%;
+  /* width: 40%; */
 }
 
 .wrapper {
@@ -247,7 +247,7 @@ body {
 }
 
 .player {
-  padding-top: 2.6%;
+  padding-top: 1.6%;
 }
 
 .wrapper_silver {
@@ -266,9 +266,9 @@ body {
 }
 
 .card-img_player {
-  width: 55%;
+  /* width: 55%; */
   position: absolute;
-  top: 10%;
+  top: 3%;
   left: 48%;
 }
 
@@ -301,6 +301,7 @@ body {
 
 .img {
   display: block;
+  max-width: 100%;
 }
 
 .card-title_card {
@@ -419,6 +420,22 @@ body {
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
+  .header-logo {
+    width: 23%;
+  }
+
+  .header-title {
+    margin: auto;
+  }
+
+  .title {
+    font-size: 64px;
+  }
+
+  .card-img_athlete {
+    padding: 0;
+  }
+
   .section-card {
     flex-wrap: wrap;
   }
@@ -453,10 +470,43 @@ body {
   .card-block {
     width: 116px;
     height: 116px;
-    transform: translate(32%, 540%);
+    transform: translate(32%, 450%);
   }
 
-  .footer-container {
+  .footer-title {
+    display: block;
+    width: 90%;
+    text-align: center;
+  }
+
+  .footer-text {
+    font-size: 36px;
+  }
+
+  .footer-svg {
+    display: block;
+    margin: auto;
+    margin-bottom: 80px;
+    padding: 10px;
+  }
+
+  .footer-logo {
+    width: 23%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 640px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .buttons {
     flex-wrap: wrap;
+  }
+
+  .card-block::after {
+    width: 70px;
+    height: 70px;
+    transform: translate (-100%, 10%);
   }
 }
