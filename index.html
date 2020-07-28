@@ -49,7 +49,12 @@
     </div>
   </header>
   <section class="athlete">
-    <img class="card-img_athlete" src="./img/footballer_566.png" alt="footballer">
+    <picture class="pictures">
+      <source media="(max-width: 640px)" srcset="./img/footballer_192.png">
+      <source media="(min-width: 641px) and (max-width: 960px)" srcset="./img/footballer_497.png">
+      <source media="(min-width: 961px) and (max-width: 1920px)" srcset="./img/footballer_566.png">
+      <img class="card-img_athlete" src="./img/footballer_566.png" alt="footballer">
+    </picture>
     <div class="wrapper">
       <div class="block-left">
         <h2 class="card-title">Athlets</h2>
@@ -108,20 +113,26 @@
         </div>
       </div>
     </div>
-    <img class="card-img_player" src="./img/basketballer_991.png" alt="basketballer">
+    <picture class="pictures">
+      <source media="(max-width: 640px)" srcset="./img/basketballer_302.png">
+      <source media="(min-width: 641px) and (max-width: 960px)" srcset="./img/basketballer_436.png">
+      <img class="card-img_player" src="./img/basketballer_991.png" alt="basketballer">
+    </picture>
   </section>
   <section class="section-card">
-    <div class="card-img">
-      <img class="img" src="./img/be-active_1024.jpg" alt="Man with phone">
-    </div>
+    <picture class="card-img">
+      <source media="(max-width: 640px)" srcset="./img/be-active_640.jpg">
+      <source media="(min-width: 641px) and (max-width: 960px)" srcset="./img/be-active_960.jpg">
+      <img class="img" src="./img/be-active.jpg" alt="Man with phone">
+    </picture>
     <div class="card">
       <div class="card-content">
         <h2 class="card-title_card">Be active</h2>
         <p class="card-text">Post videos with your skills, like and follow others to be more popular</p>
       </div>
-    </div>
-    <div class="card-block">
-      <span class="card-block_text">01</span>
+      <div class="card-block">
+        <span class="card-block_text">01</span>
+      </div>
     </div>
   </section>
   <section class="section-card">
@@ -130,18 +141,24 @@
         <h2 class="card-title_card">Find contact</h2>
         <p class="card-text">Contact others to find right coach or athlete you are looking for.</p>
       </div>
+      <div class="card-block">
+        <span class="card-block_text">02</span>
+      </div>
     </div>
-    <div class="card-img_right">
-      <img class="img" src="./img/find-contact_1024.jpg" alt="Man with headphones">
-    </div>
-    <div class="card-block">
-      <span class="card-block_text">02</span>
-    </div>
+    <picture class="card-img_right">
+      <source media="(max-width: 640px)" srcset="./img/find-contact_640.jpg">
+      <source media="(min-width: 641px) and (max-width: 960px)" srcset="./img/find-contact_960.jpg">
+      <source media="(min-width: 961px) and (max-width: 1920px)" srcset="./img/find-contact_1024.jpg">
+      <img class="img" src="./img/find-contact.jpg" alt="Man with headphones">
+    </picture>
   </section>
   <section class="section-card">
-    <div class="card-img">
-      <img class="img" src="./img/work-it_1024.jpg" alt="Teams">
-    </div>
+    <picture class="card-img">
+      <source media="(max-width: 640px)" srcset="./img/work-it_640.jpg">
+      <source media="(min-width: 641px) and (max-width: 960px)" srcset="./img/work-it_960.jpg">
+      <source media="(min-width: 961px) and (max-width: 1920px)" srcset="./img/work-it_1024.jpg">
+      <img class="img" src="./img/work-it.jpg" alt="Teams">
+    </picture>
     <div class="card">
       <div class="card-content">
         <h2 class="card-title_card">Work it</h2>
@@ -149,9 +166,9 @@
           make this enjoyable
           experience.</p>
       </div>
-    </div>
-    <div class="card-block">
-      <span class="card-block_text">03</span>
+      <div class="card-block">
+        <span class="card-block_text">03</span>
+      </div>
     </div>
   </section>
   <footer class="footer">
