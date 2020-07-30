@@ -87,6 +87,12 @@ body {
   justify-content: space-between
 }
 
+.button-element {
+  display: inline-block;
+  margin-left: 3%;
+  vertical-align: middle;
+}
+
 .button {
   border-radius: 38px;
   background-color: #5e42b0;
@@ -94,7 +100,7 @@ body {
   margin-right: 50px;
   color: #ffffff;
   text-transform: uppercase;
-  padding: 10px 55px 12px 30px;
+  padding: 20px 75px 22px 40px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -107,7 +113,6 @@ body {
   max-width: 48px;
   height: 100%;
   fill: #ffffff;
-  margin-right: 15px;
   vertical-align: middle;
 }
 
@@ -300,7 +305,7 @@ body {
 
 .img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 .card-title_card {
@@ -403,6 +408,7 @@ body {
   border-radius: 25%;
   padding: 20px 10px;
   margin-right: 15px;
+  flex-shrink: 0;
 }
 
 .footer-text {
@@ -426,7 +432,7 @@ body {
   }
 
   .header-title {
-    padding-left: 10%;
+    margin-left: 10%;
   }
 
   .title {
@@ -475,6 +481,7 @@ body {
 
   .card {
     width: 100%;
+    position: relative;
   }
 
   .card-title_card {
@@ -485,8 +492,9 @@ body {
     width: 116px;
     height: 116px;
     position: absolute;
-    left: 20%;
-    transform: translateY(-330%);
+    top: 0;
+    left: 15%;
+    margin-top: 100px;
   }
 
   .footer-title {
@@ -520,6 +528,10 @@ body {
     font-size: 28px;
   }
 
+  .header-title {
+    margin-left: 15%;
+  }
+
   .buttons {
     overflow: hidden;
     display: flex;
@@ -534,14 +546,29 @@ body {
     margin-bottom: 30px;
   }
 
+  .button_download,
+  .button_send {
+    margin-right: 0;
+  }
+
+  .button-text,
+  .button-text_weight {
+    font-size: 8px;
+  }
+
   .card-title {
-    margin-bottom: 325px;
+    margin-bottom: 300px;
+    font-size: 50px;
   }
 
   .card-img_athlete {
     position: absolute;
     top: 13%;
     left: 25%;
+  }
+
+  .subtitle {
+    font-size: 23px;
   }
 
   .block-left {
@@ -607,9 +634,9 @@ body {
   .card-block {
     width: 100px;
     height: 100px;
-    left: 25%;
-    transform: translateY(-260%);
     position: absolute;
+    left: 20%;
+    margin-top: -65px;
   }
 
   .footer-title_title {
